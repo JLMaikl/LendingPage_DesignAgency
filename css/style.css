@@ -27,6 +27,8 @@ body {
    max-width: 1802px;
    margin: auto;   
    margin-bottom: 20px; 
+   margin-right: 60px;
+   margin-left: 60px;
    padding-top: 30px;  
 }
 .navbar-menu {
@@ -64,11 +66,8 @@ body {
    text-transform: uppercase;
    color: #57B3FE;
 }
-.logo {
-   margin-left: 15px;
-}
-.navbar-started {
-   margin-right: 15px;
+.dropdown {
+   display: none;
 }
 /* main */
 /* cards */
@@ -569,7 +568,8 @@ body {
 .footer-icon {
    display: flex;
    justify-content: space-between;
-   align-items: center;   
+   align-items: center;
+   margin-left: 5%;   
 }
 .icon-facebook {
    margin-right: 20px;
@@ -595,6 +595,18 @@ body {
 @media (max-width: 1250px) {
    body {
       max-width: 1000px;
+   }
+   .navbar {
+      padding-top: 5px;
+      justify-content: center;
+      margin-left: 15px;
+      margin-right: 15px;
+   }
+   /* .logo {
+      display: none;
+   } */
+   .navbar-started {
+      padding: 10px 30px;
    }
    .card-row-one {
       width: 80%;
@@ -626,11 +638,43 @@ body {
       width: 45%;
       margin-right: 6.87%;
    }
+   .footer-box-logo {
+      display: none;
+   }
    .footer-block {
       max-width: 80%;
    }
    .footer-item {
       margin-right: 5%;
+   }
+}
+
+@media (max-width: 900px) {
+   .navbar-nav {
+      display: none;
+   }
+   .dropdown {
+      display: flex;
+      margin-left: 5%;
+   }
+   .dropdown-menu {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      display: flex;
+      flex-direction: column;      
+   }
+   .dropdown-link {
+      text-decoration: none;
+      color: #fff;
+      font-family: DM Sans, sans-serif;
+      font-weight: 500;
+      font-size: 16px;
+   }
+   .logo-img {
+      margin-top: 15px;
+      margin-right: 25%;
+      width: 80%;
    }
 }
 
