@@ -300,7 +300,8 @@ body {
 .process-card {
    display: flex;
    justify-content: space-around;
-   align-items: flex-start;
+   /* align-items: flex-start; */
+   align-items: center;
    background-color: #fff;
    width: 100%
    /* width: 1170px; */
@@ -440,7 +441,7 @@ body {
 /* brands */
 
 .start {
-   max-width: 1920px;
+   max-width: 100%;
    height: 820px;
    margin: auto;
    background: url(../image/bg-startworking.png) no-repeat;
@@ -450,7 +451,7 @@ body {
    background-size: 100% 100%;
 }
 .start-info {
-   width: 417px;
+   width: 24.45%;
    height: 374px;
    display: flex;
    flex-direction: column;
@@ -500,10 +501,17 @@ body {
    text-transform: uppercase;
    color: #57B3FE;
 }
+.start-picture {
+   max-width: 32.47%;
+   height: auto;
+}
+.start-amg {
+   width: 100%;
+}
 
 /* end start */
 .footer {
-   max-width: 1922px;
+   max-width: 100%;
    height: 241px;
    background-color: rgba(13, 13, 13, .8);
    display: flex;
@@ -518,17 +526,26 @@ body {
    justify-content: center;
    align-items: center;
    flex-direction: column;
-   width: 1179px;
+   /* width: 1179px; */
+   max-width: 61.34%;
    height: 122px;
 }
 .footer-row-up {
-   width: 100%;   
+   max-width: 100%;   
 }
 .footer-navbar {
-   width: 100%;
+   max-width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
+}
+.footer-box-logo {
+   max-width: 100%;
+   margin: 0;
+   margin-right: 4%;
+}
+.logo-img {
+   max-width: 100%;   
 }
 .footer-menu {
    display: flex;
@@ -562,11 +579,11 @@ body {
 }
 .footer-line {
    border-bottom: 1px solid #fff;
-   width: 1170px;
+   width: 100%;
    margin-top: 27px;
 }
 .footer-row-down {
-   width: 100%;
+   max-width: 100%;
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -576,7 +593,45 @@ body {
 /* end footer */
 
 @media (max-width: 1250px) {
-   
+   body {
+      max-width: 1000px;
+   }
+   .card-row-one {
+      width: 80%;
+   }
+   .card-row-two {
+      width: 80%;
+   }
+   .brands-row-one {
+      margin-right: 5%;
+      margin-left: 5%;
+   }
+   .brands-row-two {
+      margin-right: 5%;
+      margin-left: 5%;
+   }
+   .brand-img {
+      width: 100%;
+   }
+   .brand-right {
+      margin-right: 5%;
+   }
+   .process-cards {
+      width: 80%;
+   }
+   .process-description {
+      margin-bottom: 15px;
+   }
+   .start-info {
+      width: 45%;
+      margin-right: 6.87%;
+   }
+   .footer-block {
+      max-width: 80%;
+   }
+   .footer-item {
+      margin-right: 5%;
+   }
 }
 
 
