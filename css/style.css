@@ -225,6 +225,7 @@ body {
    justify-content: center;
    align-items: center;
    flex-direction: column;
+   margin-bottom: 5%;
 }
 .card-row-one {
    display: flex;
@@ -743,6 +744,9 @@ body {
    .footer-menu {
       display: none;
    }
+   .cards-chapter {
+      width: 80%;
+   }
 }
 
 @media (max-width: 650px) {
@@ -754,7 +758,7 @@ body {
    }
    .start-amg {
       display: none;
-   }
+   }   
    .card-box {
       flex-direction: row;
    }
@@ -778,6 +782,38 @@ body {
    }
 }
 
-@media (max-width: 445px) {
+@media (max-width: 470px) {
+   .navbar-nav {
+      left: -150px;
+   }
+   .navbar-text {
+      font-size: 8px;
+   }
+   .header {
+      height: 330px;
+   }
+   .cards-title {
+      font-size: 36px;
+   }
+   .card-box {
+      flex-direction: column;
+   }
+   .brands-title {
+      font-size: 24px;
+   }
+   .start-info {
+      width: 80%;
+   }
+   .start-text-button {
+      font-size: 10px;
+   }
+   .footer-row-down {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 30px;
+   }
+
 }
 
