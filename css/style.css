@@ -19,7 +19,9 @@ body {
    background-color: #F9F8FF;  
    background-size: 100% auto; /* адаптивное фоновое изображение */
 }
-
+.m-menu {
+   display: none;
+}
 .navbar {
    display: flex;
    justify-content: space-between;
@@ -34,7 +36,7 @@ body {
 .navbar-menu {
    margin: 0;
    padding: 0;
-   list-style: none;
+   list-style: none;   
    display: flex;
    text-align: center;
 }
@@ -77,7 +79,7 @@ body {
 }
 .cards {
    max-width: 100%;
-   height: 1068px;
+   height: auto;
    /* margin: auto; */
    background: url(../image/bg.png) no-repeat;
    background-color: #F9F8FF;
@@ -110,7 +112,7 @@ body {
 .card {
    /* width: 370px; */
    width: 33%;
-   height: 335px;
+   height: auto;
    background-color: #fff;
    box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
    border-radius: 15px;
@@ -248,7 +250,7 @@ body {
 
 .process {
    max-width: 1922px;
-   height: 1639px;
+   height: auto;
    margin: auto;
    background: url(../image/process.png) no-repeat;
    display: flex;
@@ -602,17 +604,23 @@ body {
       margin-left: 15px;
       margin-right: 15px;
    }
-   /* .logo {
-      display: none;
-   } */
+   .logo {
+      max-width: 150px;
+   }
+   .logo-img {
+      width: 100%;;
+   }
    .navbar-started {
       padding: 10px 30px;
    }
+   .navbar-item {
+      margin-right: 12px;
+   }
    .card-row-one {
-      width: 80%;
+      width: 95%;
    }
    .card-row-two {
-      width: 80%;
+      width: 95%;
    }
    .brands-row-one {
       margin-right: 5%;
@@ -649,33 +657,127 @@ body {
    }
 }
 
-@media (max-width: 900px) {
+@media (max-width: 972px) {
+   .logo {
+      max-width: 130px;
+   }
+   .logo-img {
+      width: 100%;
+   }
+   .brands-title {
+      font-size: 2em;
+   }
+   .brands-sign {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+   }
+   .brands-row-one {
+      display: flex;
+      flex-direction: column;
+   }
+   .brands-row-two {
+      display: flex;
+      flex-direction: column;
+   }
+   .brand {
+      margin-top: 20px;
+   }
+}
+
+@media (max-width: 800px) {
+   .navbar {
+      justify-content: space-around;
+      /* position: relative; */
+   }
+   .m-menu {
+      display: block;
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+   }
    .navbar-nav {
+      display: flex;       
+      top: 20px;
+      left: -360px;
+      position: relative;
+   }
+   .navbar-menu {
       display: none;
+      position: absolute;
+      flex-direction: column;
+      text-align: left;
+      background-color: #A963FB;
+      z-index: 9;
+      border-radius: 10px;
    }
-   .dropdown {
-      display: flex;
-      margin-left: 5%;
+   .navbar-item {
+      padding: 10px;
    }
-   .dropdown-menu {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-      display: flex;
-      flex-direction: column;      
-   }
-   .dropdown-link {
-      text-decoration: none;
-      color: #fff;
-      font-family: DM Sans, sans-serif;
-      font-weight: 500;
-      font-size: 16px;
+   .is-open {
+      display: block !important;
    }
    .logo-img {
       margin-top: 15px;
       margin-right: 25%;
-      width: 80%;
+      width: 100%;
+   }
+   .process-chapter {
+      max-width: 90%;
+   }
+   .process-head {
+      font-size: 2.5em;
+   }
+   .navbar-started {
+      padding: 5px 15px;
+   }
+   .brands-title {
+      font-size: 2em;
+   }
+   .start-title {
+      font-size: 2em;
+   }
+   .brand {
+      margin-right: 3%;
+   }
+   .footer-menu {
+      display: none;
    }
 }
 
+@media (max-width: 650px) {
+   .navbar-nav {      
+      left: -250px;      
+   }
+   .process-audid-img {
+      display: none;
+   }
+   .start-amg {
+      display: none;
+   }
+   .card-box {
+      flex-direction: row;
+   }
+   .card-row-one {
+      flex-direction: column;
+      width: 98%;
+   }
+   .card-row-two {
+      flex-direction: column;
+      margin-top: 0;
+   }
+   .card {
+      width: 90%;
+      margin-bottom: 10px;
+   }
+   .card-right {
+      margin-right: 0;
+   }
+   .card-title {
+      font-size: 2em;
+   }
+}
+
+@media (max-width: 445px) {
+}
 
