@@ -4,18 +4,14 @@
 body {
    font-family: DM Sans, sans-serif;
    max-width: 1922px;
-   /* height: 6121px; */
    margin: auto;
 }
 .header {
    max-width: 100%;   
-   /* height: 1483px;    */
    height: 0;
    padding-bottom: 77%;
    margin: auto;
-   background: url(../image/HERO_1.png) no-repeat; 
-   /* background: url(../image/hero-img.png) no-repeat,
-   url(../image/hero-phone.png) no-repeat; */
+   background: url(../image/HERO.png) no-repeat; 
    background-color: #F9F8FF;  
    background-size: 100% auto; /* адаптивное фоновое изображение */
 }
@@ -50,23 +46,45 @@ body {
    font-weight: 500;
    font-size: 16px;      
 }
-.navbar-started {
-   padding: 20px 50px;
+.btn {
+   width: 194px;
+   height: 61px;
+   border: inherit;
    background-color: #fff;
    border-radius: 60px;
-}
-.navbar-getStarted {
-   text-decoration: none;
-}
-.navbar-text {
-   font-family: DM Sans;
-   font-style: normal;
+   cursor: pointer;
    font-weight: bold;
    font-size: 14px;
    line-height: 148%;
    letter-spacing: 0.02em;
    text-transform: uppercase;
    color: #57B3FE;
+}
+.btn:hover {
+   box-shadow: 3px 3px 3px 3px rgba(40, 121, 243, 0.88);
+}
+.header-title {
+   text-align: center;
+   margin: 0 auto;
+}
+.title {   
+   font-size: 100%;
+   font-weight: normal;   
+   font-size: 68px;
+   line-height: 120%;
+   color: #fff;
+   margin: 0;
+   margin-top: 104px;
+   margin-bottom: 8px;
+}
+.title-text {
+   weight: 400;
+   font-style: normal;
+   size: 20px;
+   line-height: 34px;
+   color: #fff;  
+   margin: 0;
+   margin-bottom: 41px; 
 }
 .dropdown {
    display: none;
