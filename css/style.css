@@ -10,7 +10,8 @@ body {
    /* max-width: 100%;    */
    /* height: 0; */
    /* padding-bottom: 77%; */
-   max-width: 1922px;
+   /* max-width: 1922px; */
+   width: 100%;
    height: auto;
    margin: auto;
    background: url(../image/HERO_10.png) no-repeat; 
@@ -30,6 +31,7 @@ body {
    margin-right: 60px;
    margin-left: 60px;
    padding-top: 30px;  
+   flex-wrap: wrap;
 }
 .navbar-menu {
    margin: 0;
@@ -145,13 +147,13 @@ body {
 }
 .card {  
    width: 370px;
-   height: 100%;
    background-color: #fff;
    box-shadow: 0px 20px 50px rgba(59, 62, 67, 0.05);
    border-radius: 15px;
    display: flex;
    align-items: flex-start;
    flex-direction: column;
+   padding: 53px 46px;
 }
 .card-right {
    margin-right: 30px;
@@ -159,44 +161,39 @@ body {
 .card-title {
    font-size: 22px;
    line-height: 30px;
-   color: #3B3E43;
-   margin-left: 11%;
+   color: #3B3E43;   
    margin-top: 20px;
    margin-bottom: 0;
 }
 .card-icon {
    width: 50px;
-   height: 50px;   
+   min-height: 50px;   
    box-shadow: 0px 10px 20px rgba(197, 158, 145, 0.1);
    border-radius: 15px;
    display: flex;
    justify-content: center;
    align-items: center;
-   margin-top: 50px;
-   margin-left: 11%;
 }
-.card-img-chart {   
+.card-icon-chart {   
    background: #FFE7DB;   
 }
-.card-img-discount {   
+.card-icon-discount {
    background: #E7F2EF;   
 }
-.card-img-user {   
+.card-icon-user {
    background: #FAF3D8;   
 }
-.card-img-search {   
+.card-icon-search {
    background: #C0F2EF;   
 }
-.card-img-graph {   
+.card-icon-graph {
    background: #EDE7F2;   
 }
-.card-img-bag {   
+.card-icon-bag {
    background: #D8F0FA;   
 }
 .card-text {
    margin-top: 15px;
-   margin-right: 23px;
-   margin-left: 11%;
    font-size: 16px;
    line-height: 24px;
    color: #595E64;
@@ -233,7 +230,7 @@ body {
    max-width: 1922px;
    height: auto;
    margin: auto;
-   background: url(../image/process.png) no-repeat;
+   background: url(../image/process_1.png) no-repeat;
    display: flex;
    justify-content: flex-start;
    align-items: center;
@@ -590,9 +587,6 @@ body {
 /* end footer */
 
 @media(max-width: 1310px) {
-   .navbar {
-      flex-wrap: wrap;
-   }
    .navbar-nav {
       order: 1;
       margin: auto;
@@ -809,10 +803,12 @@ body {
       flex-direction: column;
    }
    .process-icon {
-      margin-top: 10%;
+      margin-top: 5%;
    }
    .process-card-text {
       margin-bottom: 20px;
+      margin-right: 0;
+      width: 90%;
    }
    .process-card-end {
       margin-bottom: 100px;
@@ -883,6 +879,9 @@ body {
    }
    .footer-down {
       margin: 3px;
+   }
+   .footer-item {
+      margin-right: 0;
    }
 }
 
