@@ -822,10 +822,6 @@ body {
    .process-head {
       font-size: 36px;
    }
-   .start-info {
-      margin-right: 100px;
-      margin-bottom: 100px;
-   }
    .start-title {      
       font-size: 36px;
    } 
@@ -844,7 +840,8 @@ body {
       justify-content: center;
    }
    .start-info {
-      margin: 40px 0 40px;
+      margin-right: 100px;
+      margin: 40px 0 60px;
       width: 80%;
    }
    .start-img {
